@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2 class="text-center">API Information</h2>
+  <p>С помощью данного API можно получить информацию о 10 фильмах с наивысшим рейтингом, которые в данный момент идут в кинотеатрах. Информация доступна <a href="/api/movie_info.json"> здесь</a></p>
+</div>
+
+<div class="container">
+  <p>Значения ключей:</p>
+  <ul>
+    <li><b>afisha_page</b> - ссылка на страницу на авише</li>
+    <li><b>movie_rating</b> - рейтинг на кинопоиске</li>
+    <li><b>movie_title</b> - название фильма</li>
+    <li><b>poster_url</b> - ссылка на постер</li>
+    <li><b>rating_count</b> - число голосов на кинопоиске</li>
+    <li><b>movie_description</b> - описание фильма</li>
+  </ul>
+</div>
+{% endblock %}
